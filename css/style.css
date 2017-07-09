@@ -1,0 +1,18 @@
+@import "top.css";
+@import "intro.css";
+@import "events.css";
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Noto Sans TC Bold";
+    src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+
+body{
+    background-color: #141414;
+}
