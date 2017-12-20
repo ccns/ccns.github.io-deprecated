@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "gen": "node generate.js"
+    "gen": "node generate.js",
+    "push": "git add . && git commit -m 'update events' && git push"
   },
   "repository": {
     "type": "git",
