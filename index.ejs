@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>CCNS - 成大電腦網路愛好社</title>
+
+        <link rel="stylesheet" href="frameworks/bootstrap-3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="frameworks/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri:700|Crimson+Text:700|Droid+Serif:400,700|Libre+Baskerville:700|Noto+Sans|Playfair+Display:900|Roboto:900|Taviraj:900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="top container-fluid">
+            <div class="headerLeft">
+                <div class="logoBox">
+                    <p>CC</p>
+                    <p>NS</p>
+                </div>
+                <p>成大電腦網路愛好社</p>
+            </div>
+            <div class="headerRight">
+                <a href="#">社員</a>
+                <a href="#">專案</a>
+                <a href="#">介紹</a>
+                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="backgroundWords">Who Are Us</div>
+            <div class="weIntro">Software Engineers, <br/>Developers, Hackers, <br/>Adventurers ... @NCKU</div>
+            <div class="contactLine">
+                <div class="line"></div>
+                <a href="https://github.com/ccns"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://t.me/CCNSgeneral"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a href="https://medium.com/@tsunderechen"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                <a href="https://www.fb.com/groups/ncku.ccns"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://discord.gg/CyVa5gG"><i class="fa fa-btc" aria-hidden="true"></i></a>
+                <a href="https://ccns.github.io/dreambbs/"><i class="fa fa-terminal" aria-hidden="true"></i></a>
+            </div>
+            <div class="clubIntro">
+                我們是 <span class="white">CCNS - 成大電腦網路愛好社</span> ，位於台南的熱血資訊社群。
+            </div>
+            <div class="clubIntro">
+                社團由各式各樣的人組成，<span class="white"> 黑客、創客、軟體工程師、創業家、網管、⋯⋯</span> ，應有盡有。
+            </div>
+            <div class="clubIntro">
+                如果你也是 <span class="white">熱愛資訊、喜愛交流的人</span> ，不論是不是學生，我們張開雙手歡迎你的加入！
+            </div>
+        </section>
+        <section class="events">
+            <div class="backgroundWords">Wanna Join?</div>
+            <div class="weIntro">Latest Events</div>
+
+            <% entry.forEach(function (e, i) { %>
+            <% if(i == 0) { %>
+            <div class="eventBox new">
+            <% } else if(i == (entry.length - 1)) { %>
+            <div class="eventBox last">
+            <% } else { %>
+            <div class="eventBox">
+            <% } %>
+                <div class="eventInfo">
+                  <p class="eventPlace"><%= e.place %></p>
+                  <p class="eventTime"><%= e.time %></p>
+                </div>
+                <div class="eventName">
+                  <div class="name"><%= e.title %></div>
+                  <a href="<%= e.url %>" class="url" target="_blank"><%= e.url %></a>
+                </div>
+            </div>
+            <% }); %>
+
+        </section>
+
+        <script src="Page-Home/frameworks/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+        <script src="Page-Home/frameworks/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

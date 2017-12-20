@@ -1,0 +1,25 @@
+{
+  "name": "ccns.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "moment": "^2.20.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "gen": "node generate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccns/ccns.github.io.git"
+  },
+  "author": "Daniel Chen",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/ccns/ccns.github.io/issues"
+  },
+  "homepage": "https://github.com/ccns/ccns.github.io#readme"
+}
