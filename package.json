@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "ejs": "^3.0.1",
     "moment": "^2.24.0",
     "request": "^2.88.0"
   },
-  "devDependencies": {},
   "scripts": {
     "gen": "git pull && node generate.js",
     "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update events' && git push)"
