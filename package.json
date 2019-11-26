@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ejs": "^2.5.7",
-    "moment": "^2.20.1",
+    "ejs": "^2.7.4",
+    "moment": "^2.24.0",
     "request": "^2.88.0"
   },
   "devDependencies": {},
