@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ejs": "^2.5.7",
-    "moment": "^2.20.1",
+    "@fortawesome/fontawesome-free": "^5.0.2",
+    "bootstrap": "^4.4.0",
+    "flipclock": "^0.10.8",
+    "jquery": "^3.1.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "ejs": "^3.0.1",
+    "moment": "^2.24.0",
     "request": "^2.88.0"
   },
-  "devDependencies": {},
   "scripts": {
     "gen": "git pull && node generate.js",
+    "bootstrap": "cp -r node_modules/bootstrap/dist -T frameworks/bootstrap",
+    "flipclock": "cp -r node_modules/flipclock/dist -T frameworks/flipclock",
+    "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
+    "jquery": "cp -r node_modules/jquery/dist/ -T frameworks/jquery",
+    "bundle": "rm -rf frameworks/*; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
     "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update events' && git push)"
   },
   "repository": {
