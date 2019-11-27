@@ -16,3 +16,10 @@ $ npm run gen
 $ npm run push
 ```
 
+Update modules under `frameworks/` and push them to github
+```
+$ npm update
+$ npm run bundle
+$ npm run push
+```
+
