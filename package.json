@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "flipclock": "^0.7.7",
     "@fortawesome/fontawesome-free": "^5.0.2",
+    "bootstrap": "^3.3.7",
+    "flipclock": "^0.10.8",
     "jquery": "^3.1.1"
   },
   "devDependencies": {
@@ -17,7 +17,7 @@
   "scripts": {
     "gen": "git pull && node generate.js",
     "bootstrap": "cp -r node_modules/bootstrap/dist -T frameworks/bootstrap",
-    "flipclock": "cp -r node_modules/flipclock/compiled -T frameworks/flipclock",
+    "flipclock": "cp -r node_modules/flipclock/dist -T frameworks/flipclock",
     "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
     "jquery": "cp -r node_modules/jquery/dist/ -T frameworks/jquery",
     "bundle": "rm -rf frameworks/*; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
